@@ -1,13 +1,16 @@
 package uri1002;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO: add scanner!
+		Scanner teclado;
+		teclado = new Scanner(System.in);
 		Circle c = new Circle();
-		c.setRadius(2.0);
-		// TODO: format number!
-		System.out.println(c.getArea());
+		c.setRadius(teclado.nextDouble());
+		teclado.close();
+		System.out.printf("A=%.4f%n", c.getArea());
 	}
 
 }
