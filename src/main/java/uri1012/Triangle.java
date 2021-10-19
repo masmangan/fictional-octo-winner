@@ -1,6 +1,6 @@
 package uri1012;
 
-public class Triangle {
+public class Triangle extends Shape {
 
 	double base;
 	double height;
@@ -21,8 +21,14 @@ public class Triangle {
 		this.height = height;
 	}
 
+	@Override
 	public double getArea() {
 		return (base * height) / 2.0;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("TRIANGULO: %.3f", getArea());
 	}
 	
 }

@@ -1,6 +1,8 @@
 package uri1002;
 
-public class Circle {
+import uri1012.Shape;
+
+public class Circle extends Shape {
 
 	private static final double PI = 3.14159;
 	private double radius;
@@ -16,6 +18,14 @@ public class Circle {
 		this.radius = radius;
 	}
 
+	
+	@Override
+	public String toString() {
+		return String.
+				format("CIRCULO: %.3f", getArea());
+	}
+	
+	@Override
 	public double getArea() {
 		return PI * Math.pow(radius, 2.0);
 	}
